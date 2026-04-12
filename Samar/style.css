@@ -1,3 +1,9 @@
+#navbar-sticky ul li a,
+#navbar-sticky ul li i {
+    color: #262626;
+    transition: color 0.3s ease;
+}
+
 #navbar-sticky ul li:hover a,
 #navbar-sticky ul li:hover i {
     color: #FAADC4;
@@ -12,12 +18,12 @@ header {
 }
 
 #navbar-sticky ul li a {
-    transform: translateY(0px);
     transition: all 0.3s ease;
 }
 
-#navbar-sticky ul li:hover a {
-    transform: translateY(20px);
+
+.header__content li:hover a {
+    animation: upToDown 0.3s forwards;
 }
 
 button {
@@ -86,6 +92,18 @@ button:hover {
     text-align: center;
 }
 
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    will-change: opacity, transform;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* FEATURES */
 .features {
     background-image: url('./pic/bg2.png');
@@ -124,6 +142,24 @@ button:hover {
 
 .portfolio-item:hover img {
     transform: scale(1.05);
+}
+
+.portfolio-item::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+    z-index: 5;
+}
+
+.portfolio-item:hover::before {
+    left: 125%;
 }
 
 /* BLOG */
@@ -184,7 +220,68 @@ footer::before {
     left: 20px;
 }
 
+footer .space-y-4 li>span:last-child,
+footer .space-y-4 li>span:last-child a,
+footer .space-y-4 li>span:last-child p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+footer .space-y-4 li>span:first-child {
+    color: inherit;
+}
+
+footer .space-y-4 li>span:first-child i,
+footer .space-y-3 li a i {
+    color: inherit !important;
+}
+
+footer .space-y-4 li>span:first-child i {
+    color: #ffffff !important;
+}
+
 /* BACK TO TOP */
-#backToTop {
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: #f55f8d;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    transition: all .2s;
     box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.cd-top--is-visible {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: 1;
+}
+
+/* KEYFRAMES */
+@keyframes upToDown {
+    49% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
 }

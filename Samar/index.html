@@ -18,6 +18,17 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
         integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Fancybox 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,10 +36,10 @@
 <body class="overflow-x-hidden">
     <!-- Header  -->
     <header>
-        <nav class=" w-full">
+        <nav class="w-full">
             <div class="text-sm max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class=" flex items-center space-x-3 rtl:space-x-reverse">
-                    <img class="w-40 ml-3 mt-3" src="./pic/logo-2.png" class="h-7" alt="Flowbite Logo">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img class="w-40 ml-3 mt-3" src="./pic/logo-2.png" alt="Logo">
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse mr-5 mt-5">
                     <button type="button"
@@ -45,273 +56,243 @@
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ml-50"
+                <div class="header__content items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ml-50"
                     id="navbar-sticky">
                     <ul
                         class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
                         <li class="flex">
                             <a href="#"
-                                class="block py-2 px-3  bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0"
+                                class="block py-2 px-3 bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0"
                                 aria-current="page">Home</a>
-                            <span><i class=" fa-solid fa-chevron-down"></i></span>
-                        </li>
-                        <li class="flex">
-                            <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pages</a>
                             <span><i class="fa-solid fa-chevron-down"></i></span>
                         </li>
                         <li class="flex">
                             <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Pages</a>
                             <span><i class="fa-solid fa-chevron-down"></i></span>
                         </li>
                         <li class="flex">
                             <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Post
+                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Services</a>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </li>
+                        <li class="flex">
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Post
                                 Layout</a>
                             <span><i class="fa-solid fa-chevron-down"></i></span>
                         </li>
                         <li class="flex">
                             <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blog</a>
+                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Blog</a>
                             <span><i class="fa-solid fa-chevron-down"></i></span>
                         </li>
                         <li class="flex">
                             <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact
+                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Contact
                                 Us</a>
                             <span><i class="fa-solid fa-chevron-down"></i></span>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
-    <!-- We are the best  -->
-    <section class="carousel py-40 px-20 flex items-center justify-between w-full">
 
-        <div class="carousel__content space-y-5 ">
-            <h2 class="text-[#F55F8D] text-xl font-semibold text-heading">We are The Best </h2>
-            <h1 class="text-6xl font-bold text-heading whitespace-nowrap">Freelance Product <br> Designer Running
-            </h1>
-            <p class="opacity-75">We develop the relationships that underpin the next phase in your <br> organisation’s
-                growth.
-            </p>
-            <div class="flex gap-2">
-                <div
-                    class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d_0%,#f8ae56_51%,#f55f8d_100%)] rounded-full w-8 h-8">
-                    <i class="las la-check text-white font-bold"></i>
-                </div>
-                <p class="opacity-75 text-xl"> Master's degree in designing </p>
-
-            </div>
-
-            <div class="flex gap-2">
-                <div
-                    class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d_0%,#f8ae56_51%,#f55f8d_100%)] rounded-full w-8 h-8">
-                    <i class="las la-check text-white font-bold"></i>
-                </div>
-                <p class="opacity-75 text-xl"> Outstanding mobile design
+    <!-- Hero / Carousel -->
+    <section class="carousel py-40 w-full">
+        <div class="max-w-screen-xl mx-auto px-6 flex items-center justify-between">
+            <div class="carousel__content space-y-5">
+                <h2 class="text-[#F55F8D] text-xl font-semibold animate__animated animate__fadeInUp"
+                    style="animation-duration: 2s;">We are The Best</h2>
+                <h1 class="text-6xl font-bold whitespace-nowrap animate__animated animate__fadeInUp animate__delay-1s"
+                    style="animation-duration: 2s;">
+                    Freelance Product <br> Designer Running
+                </h1>
+                <p class="opacity-75 animate__animated animate__fadeInUp"
+                    style="animation-delay: 1.5s; animation-duration: 2s;">We develop the
+                    relationships that underpin the next phase in your <br> organisation's growth.
                 </p>
-
+                <div class="flex gap-2 animate__animated animate__fadeInUp"
+                    style="animation-delay: 2s; animation-duration: 2s;">
+                    <div
+                        class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d_0%,#f8ae56_51%,#f55f8d_100%)] rounded-full w-8 h-8">
+                        <i class="las la-check text-white font-bold"></i>
+                    </div>
+                    <p class="opacity-75 text-xl">Master's degree in designing</p>
+                </div>
+                <div class="flex gap-2 animate__animated animate__fadeInUp"
+                    style="animation-delay: 2s; animation-duration: 2s;">
+                    <div
+                        class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d_0%,#f8ae56_51%,#f55f8d_100%)] rounded-full w-8 h-8">
+                        <i class="las la-check text-white font-bold"></i>
+                    </div>
+                    <p class="opacity-75 text-xl">Outstanding mobile design</p>
+                </div>
+                <button class="text-white animate__animated animate__fadeInUp"
+                    style="animation-delay: 2.3s; animation-duration: 2s;">get started</button>
             </div>
-
-            <button class="text-white ">get started</button>
-
-
+            <div class="carousel__img animate__animated animate__fadeInUp"
+                style="animation-delay: 2s; animation-duration: 2s;">
+                <img class="w-auto max-w-full" src="./pic/pic3_1.png" alt="">
+            </div>
         </div>
-        <div class="carousel__img ">
-            <img class="w-auto max-w-full ml-35" src="./pic/pic3_1.png" alt="">
-        </div>
-
-
     </section>
-    <!-- What we do best  -->
-    <section class=" card space-y-5">
-        <div class="text-center space-y-5 ">
-            <h2 class="text-[#F55F8D] text-2xl font-semibold ">What We Do Best</h2>
-            <h1 class="text-6xl font-bold">Our Digital Services</h1>
-        </div>
 
-
-        <div class=" py-10 px-10 flex place-content-center gap-8">
-
-
-            <div class="card__1 max-w-sm w-100 h-100">
-                <a href="#">
-                    <img class="w-50 h-50 object-cover mx-auto my-5" src="./pic/pic1_3.jpg" alt="" />
-                </a>
-                <div class="text-center">
-
-                    <h1 class="text-2xl font-semibold my-5">Web Development</h1>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Vestibulum a efficitur ex. Ut iaculis
-                        <br>
-                        dapibus iaculis. Praesent lacus magna, <br> rhoncus quis magna quis.
-                    </p>
-
-
-                </div>
+    <!-- What we do best -->
+    <section class="card space-y-5">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="text-center space-y-5 wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+                <h2 class="text-[#F55F8D] text-2xl font-semibold">What We Do Best</h2>
+                <h1 class="text-6xl font-bold">Our Digital Services</h1>
             </div>
-
-            <div class="card__2 max-w-sm w-100 h-100">
-                <a href="#">
-                    <img class="w-50 h-50 object-cover mx-auto my-5" src="./pic/pic2_2.jpg" alt="" />
-                </a>
-                <div class="text-center">
-
-                    <h1 class="text-2xl font-semibold my-5">Strategy & Research</h1>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Vestibulum a efficitur ex. Ut iaculis
-                        <br>
-                        dapibus iaculis. Praesent lacus magna, <br> rhoncus quis magna quis.
-                    </p>
-
-
+            <div class="py-10 flex place-content-center gap-8">
+                <div class="card__1 max-w-sm w-100 h-100 wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                    data-wow-delay="0.2s">
+                    <a href="#">
+                        <img class="w-50 h-50 object-cover mx-auto my-5" src="./pic/pic1_3.jpg" alt="" />
+                    </a>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold my-5">Web Development</h1>
+                        <p class="mb-3 font-normal text-gray-700">Vestibulum a efficitur ex. Ut iaculis
+                            dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card__3 max-w-sm w-100 h-100">
-                <a href="#">
-                    <img class="w-50 h-50 object-cover mx-auto my-5" src="./pic/pic3_2.jpg" alt="" />
-                </a>
-                <div class="text-center">
-
-                    <h1 class="text-2xl font-semibold my-5">Growth Tracking</h1>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Vestibulum a efficitur ex. Ut iaculis
-                        <br>
-                        dapibus iaculis. Praesent lacus magna, <br> rhoncus quis magna quis.
-                    </p>
-
-
+                <div class="card__2 max-w-sm w-100 h-100 wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                    data-wow-delay="0.4s">
+                    <a href="#">
+                        <img class="w-50 h-50 object-cover mx-auto my-5" src="./pic/pic2_2.jpg" alt="" />
+                    </a>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold my-5">Strategy & Research</h1>
+                        <p class="mb-3 font-normal text-gray-700">Vestibulum a efficitur ex. Ut iaculis
+                            dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                    </div>
+                </div>
+                <div class="card__3 max-w-sm w-100 h-100 wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                    data-wow-delay="0.6s">
+                    <a href="#">
+                        <img class="w-50 h-50 object-cover mx-auto my-5" src="./pic/pic3_2.jpg" alt="" />
+                    </a>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold my-5">Growth Tracking</h1>
+                        <p class="mb-3 font-normal text-gray-700">Vestibulum a efficitur ex. Ut iaculis
+                            dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About us  -->
+    <!-- About us -->
     <section class="about-us flex w-full h-full py-20 items-center gap-20 overflow-hidden">
-
-        <div class="w-[60%] h-[450px] rounded-r-[70px] overflow-hidden -ml-30 mt-15">
+        <div class="w-[60%] h-[450px] rounded-r-[70px] overflow-hidden -ml-30 mt-15 wow animate__animated animate__fadeInLeft"
+            data-wow-duration="2s" data-wow-delay="0.2s">
             <img class="w-full h-full object-cover" src="./pic/pic1.jpg" alt="">
         </div>
-        <div class="w-[55%] space-y-5 h-auto ">
+        <div class="w-[55%] space-y-5 h-auto wow animate__animated animate__fadeInRight" data-wow-duration="2s"
+            data-wow-delay="0.2s">
             <h2 class="text-[#F55F8D] text-xl font-semibold">About Us</h2>
-            <h1 class="text-6xl font-bold">Build Your <br>
-                Business Website <br>
-                Better</h1>
+            <h1 class="text-6xl font-bold">Build Your <br> Business Website <br> Better</h1>
             <p class="opacity-75">Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim.
-                <br>
-                Vivamus blandit,
-                dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis <br> neque et nulla. Sed euismod
-                turpis id
-                nibh suscipit semper. Pellentesque dapibus <br> risus arcu.
+                Vivamus blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis
+                neque et nulla. Sed euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.
             </p>
-
-            <ul class="list-none space-y-5 opacity-75 ">
+            <ul class="list-none space-y-5 opacity-75">
                 <li class="flex items-center gap-2">
-                    <i class="fa-regular fa-circle-check text-[#f55f8d] text-2xl"
-                        style="-webkit-text-stroke: 0.1px;"></i>
-                    <p class="text-base"> We support programs that create advancement opportunities for people.
-                    </p>
-
+                    <i class="fa-regular fa-circle-check text-[#f55f8d] text-2xl"></i>
+                    <p class="text-base">We support programs that create advancement opportunities for people.</p>
                 </li>
                 <li class="flex items-center gap-2">
                     <i class="fa-regular fa-circle-check text-[#f55f8d] text-2xl"></i>
                     <p class="text-base">Get a view of events and trends. Be updated on our recent news.</p>
                 </li>
                 <li class="flex items-center gap-2">
-                    <i class="fa-regular fa-circle-check text-[#f55f8d] text-2xl "></i>
-
-                    <p class="text-base">Finally, it all comes down to people. Creating a winning team.
-                    </p>
+                    <i class="fa-regular fa-circle-check text-[#f55f8d] text-2xl"></i>
+                    <p class="text-base">Finally, it all comes down to people. Creating a winning team.</p>
                 </li>
                 <li class="flex items-center gap-2">
                     <i class="fa-regular fa-circle-check text-[#f55f8d] text-2xl"></i>
                     <p class="text-base">Get a view of events and trends. Be updated on our recent news.</p>
                 </li>
             </ul>
-            <button class="inline-block bg-[#f55f8d] text-white font-bold py-4 px-8 ">
-                LEARN MORE
-            </button>
+            <button class="inline-block bg-[#f55f8d] text-white font-bold py-4 px-8">LEARN MORE</button>
         </div>
     </section>
-    <!-- Statistics -->
-    <section class="statistics flex gap-40 items-center justify-center w-full h-full">
 
-        <div class="flex flex-col items-center text-center space-y-5 ">
-            <div
-                class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
-                <i class="lar la-smile text-white text-5xl"></i>
-            </div>
-            <div class="">
-                <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
-                    <span class="counter">18</span><span>
-                        MI
-                    </span>
+    <!-- Statistics -->
+    <section class="statistics w-full py-20">
+        <div
+            class="max-w-screen-xl mx-auto px-6 flex flex-wrap lg:flex-nowrap items-center justify-center gap-10 lg:gap-24">
+            <div class="stat-item flex-none flex flex-col items-center text-center space-y-5 min-w-[220px] wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s" data-wow-delay="0.1s">
+                <div
+                    class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
+                    <i class="lar la-smile text-white text-5xl"></i>
                 </div>
-                <p>Satisfied Clients</p>
-                <h2></h2>
-            </div>
-        </div>
-        <div class="flex flex-col items-center text-center space-y-5 ">
-            <div
-                class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
-                <i class="fa-solid fa-desktop text-white text-4xl"></i>
-            </div>
-            <div class="">
-                <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
-                    <span class="counter">20</span><span>
-                        MI
-                    </span>
+                <div>
+                    <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
+                        <span class="counter">18</span><span>MI</span>
+                    </div>
+                    <p>Satisfied Clients</p>
                 </div>
-                <p>Project Completed</p>
-                <h2></h2>
             </div>
-        </div>
-        <div class="flex flex-col items-center text-center space-y-5 ">
-            <div
-                class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
-                <i class="fa-solid fa-rocket text-white text-4xl"></i>
-            </div>
-            <div class="">
-                <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
-                    <span class="counter">30</span>
-                    <span>
-                        MI
-                    </span>
+            <div class="stat-item flex-none flex flex-col items-center text-center space-y-5 min-w-[220px] wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s" data-wow-delay="0.3s">
+                <div
+                    class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
+                    <i class="fa-solid fa-desktop text-white text-4xl"></i>
                 </div>
-                <p>Project Lunched</p>
-                <h2></h2>
-            </div>
-        </div>
-        <div class="flex flex-col items-center text-center space-y-5 ">
-            <div
-                class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
-                <i class="fa-solid fa-champagne-glasses text-white text-4xl"></i>
-            </div>
-            <div class="">
-                <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
-                    <span class="counter">50</span>
+                <div>
+                    <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
+                        <span class="counter">20</span><span>MI</span>
+                    </div>
+                    <p>Project Completed</p>
                 </div>
-                <p>Years Completed</p>
-                <h2></h2>
+            </div>
+            <div class="stat-item flex-none flex flex-col items-center text-center space-y-5 min-w-[220px] wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s" data-wow-delay="0.5s">
+                <div
+                    class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
+                    <i class="fa-solid fa-rocket text-white text-4xl"></i>
+                </div>
+                <div>
+                    <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
+                        <span class="counter">30</span><span>MI</span>
+                    </div>
+                    <p>Project Lunched</p>
+                </div>
+            </div>
+            <div class="stat-item flex-none flex flex-col items-center text-center space-y-5 min-w-[220px] wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s" data-wow-delay="0.7s">
+                <div
+                    class="flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-full w-18 h-18">
+                    <i class="fa-solid fa-champagne-glasses text-white text-4xl"></i>
+                </div>
+                <div>
+                    <div class="flex place-content-center gap-2 text-[#F55F8D] text-6xl font-bold">
+                        <span class="counter">50</span>
+                    </div>
+                    <p>Years Completed</p>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- Features -->
     <section class="features pt-28 pb-0 overflow-hidden">
         <div class="max-w-screen-xl mx-auto px-6">
             <div class="flex items-center gap-10">
-                <!-- Left -->
                 <div class="w-1/2 space-y-8">
-                    <div class="space-y-3">
+                    <div class="space-y-3 wow animate__animated animate__fadeInLeft" data-wow-duration="1s"
+                        data-wow-delay="0.2s">
                         <p class="text-[#f55f8d] text-xl font-semibold">Our Features</p>
                         <h2 class="text-6xl font-extrabold text-[#262626] leading-tight">Behind The Story <br> Of Samar
                             Agency</h2>
                     </div>
                     <!-- Feature item 1 -->
-                    <div
-                        class="feature-item group bg-white rounded-xl shadow-[0_0_60px_0_rgba(0,0,0,0.1)] p-7 flex items-center gap-6 relative overflow-hidden transition-all duration-700 cursor-pointer">
+                    <div class="feature-item group bg-white rounded-xl shadow-[0_0_60px_0_rgba(0,0,0,0.1)] p-7 flex items-center gap-6 relative overflow-hidden transition-all duration-700 cursor-pointer wow animate__animated animate__fadeInRight"
+                        data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div
                             class="feature-overlay absolute inset-0 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0">
                         </div>
@@ -326,8 +307,8 @@
                         </div>
                     </div>
                     <!-- Feature item 2 -->
-                    <div
-                        class="feature-item group bg-white rounded-xl shadow-[0_0_60px_0_rgba(0,0,0,0.1)] p-7 flex items-center gap-6 relative overflow-hidden transition-all duration-700 cursor-pointer ml-12">
+                    <div class="feature-item group bg-white rounded-xl shadow-[0_0_60px_0_rgba(0,0,0,0.1)] p-7 flex items-center gap-6 relative overflow-hidden transition-all duration-700 cursor-pointer ml-12 wow animate__animated animate__fadeInRight"
+                        data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div
                             class="feature-overlay absolute inset-0 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0">
                         </div>
@@ -342,8 +323,8 @@
                         </div>
                     </div>
                     <!-- Feature item 3 -->
-                    <div
-                        class="feature-item group bg-white rounded-xl shadow-[0_0_60px_0_rgba(0,0,0,0.1)] p-7 flex items-center gap-6 relative overflow-hidden transition-all duration-700 cursor-pointer">
+                    <div class="feature-item group bg-white rounded-xl shadow-[0_0_60px_0_rgba(0,0,0,0.1)] p-7 flex items-center gap-6 relative overflow-hidden transition-all duration-700 cursor-pointer wow animate__animated animate__fadeInRight"
+                        data-wow-duration="1.5s" data-wow-delay="0.6s">
                         <div
                             class="feature-overlay absolute inset-0 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0">
                         </div>
@@ -359,7 +340,8 @@
                     </div>
                 </div>
                 <!-- Right: floating image -->
-                <div class="w-1/2 flex justify-center">
+                <div class="w-1/2 flex justify-center wow animate__animated animate__fadeInRight"
+                    data-wow-duration="1.5s">
                     <img src="./pic/pic3.png" alt="Features" class="max-w-full animate-[move2_5s_ease-in-out_infinite]">
                 </div>
             </div>
@@ -369,104 +351,121 @@
     <!-- Portfolio -->
     <section class="portfolio pt-28 pb-10 overflow-hidden text-center">
         <div class="max-w-screen-xl mx-auto px-6">
-            <div class="space-y-3 mb-10">
+            <div class="space-y-3 mb-10 wow animate__animated animate__fadeInUp" data-wow-duration="1s">
                 <p class="text-[#f55f8d] text-xl font-semibold">Portfolio</p>
                 <h2 class="text-6xl font-extrabold text-[#262626]">Our Latest Work</h2>
             </div>
             <div class="grid grid-cols-3 gap-8" style="grid-template-columns: 1fr 1fr 1.5fr;">
-                <!-- Item 1 - spans 2 cols -->
-                <div class="portfolio-item relative rounded-xl overflow-hidden group" style="grid-column: 1 / span 2;">
-                    <img src="./pic/pic1_2.jpg" alt="" class="w-full h-full object-cover">
+                <!-- Item 1 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden group wow animate__animated animate__fadeInUp"
+                    style="grid-column: 1 / span 2;" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                    <a href="./pic/pic1_2.jpg" class="block w-full h-full">
+                        <img src="./pic/pic1_2.jpg" alt="" class="w-full h-full object-cover">
+                    </a>
                     <div
-                        class="portfolio-overlay absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                        class="portfolio-overlay absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                     </div>
-                    <div
-                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-5 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                    <a href="./pic/pic1_2.jpg"
+                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 z-10 opacity-0 group-hover:opacity-100">
                         <i class="la la-plus"></i>
-                    </div>
+                    </a>
                     <div
-                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10 pointer-events-none">
                         <h3 class="text-xl font-extrabold text-white">Software Landing</h3>
                         <p class="text-white opacity-70">By Jhone Doe</p>
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="portfolio-item relative rounded-xl overflow-hidden group">
-                    <img src="./pic/pic2_1.jpg" alt="" class="w-full h-full object-cover">
+                <div class="portfolio-item relative rounded-xl overflow-hidden group wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <a href="./pic/pic2_1.jpg" class="block w-full h-full">
+                        <img src="./pic/pic2_1.jpg" alt="" class="w-full h-full object-cover">
+                    </a>
                     <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                     </div>
-                    <div
-                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-5 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                    <a href="./pic/pic2_1.jpg"
+                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 z-10 opacity-0 group-hover:opacity-100">
                         <i class="la la-plus"></i>
-                    </div>
+                    </a>
                     <div
-                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10 pointer-events-none">
                         <h3 class="text-xl font-extrabold text-white">Software Landing</h3>
                         <p class="text-white opacity-70">By Jhone Doe</p>
                     </div>
                 </div>
                 <!-- Item 3 -->
-                <div class="portfolio-item relative rounded-xl overflow-hidden group">
-                    <img src="./pic/pic3_1.jpg" alt="" class="w-full h-full object-cover">
+                <div class="portfolio-item relative rounded-xl overflow-hidden group wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <a href="./pic/pic3_1.jpg" class="block w-full h-full">
+                        <img src="./pic/pic3_1.jpg" alt="" class="w-full h-full object-cover">
+                    </a>
                     <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                     </div>
-                    <div
-                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-5 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                    <a href="./pic/pic3_1.jpg"
+                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 z-10 opacity-0 group-hover:opacity-100">
                         <i class="la la-plus"></i>
-                    </div>
+                    </a>
                     <div
-                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10 pointer-events-none">
                         <h3 class="text-xl font-extrabold text-white">Software Landing</h3>
                         <p class="text-white opacity-70">By Jhone Doe</p>
                     </div>
                 </div>
                 <!-- Item 4 -->
-                <div class="portfolio-item relative rounded-xl overflow-hidden group">
-                    <img src="./pic/pic4.jpg" alt="" class="w-full h-full object-cover">
+                <div class="portfolio-item relative rounded-xl overflow-hidden group wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.5s" data-wow-delay="0.4s">
+                    <a href="./pic/pic4.jpg" class="block w-full h-full">
+                        <img src="./pic/pic4.jpg" alt="" class="w-full h-full object-cover">
+                    </a>
                     <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                     </div>
-                    <div
-                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-5 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                    <a href="./pic/pic4.jpg"
+                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 z-10 opacity-0 group-hover:opacity-100">
                         <i class="la la-plus"></i>
-                    </div>
+                    </a>
                     <div
-                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10 pointer-events-none">
                         <h3 class="text-xl font-extrabold text-white">Software Landing</h3>
                         <p class="text-white opacity-70">By Jhone Doe</p>
                     </div>
                 </div>
-                <!-- Item 5 - spans 2 cols -->
-                <div class="portfolio-item relative rounded-xl overflow-hidden group" style="grid-column: 1 / span 2;">
-                    <img src="./pic/pic5.jpg" alt="" class="w-full h-full object-cover">
+                <!-- Item 5 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden group wow animate__animated animate__fadeInUp"
+                    style="grid-column: 1 / span 2;" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <a href="./pic/pic5.jpg" class="block w-full h-full">
+                        <img src="./pic/pic5.jpg" alt="" class="w-full h-full object-cover">
+                    </a>
                     <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                     </div>
-                    <div
-                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-5 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                    <a href="./pic/pic5.jpg"
+                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 z-10 opacity-0 group-hover:opacity-100">
                         <i class="la la-plus"></i>
-                    </div>
+                    </a>
                     <div
-                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10 pointer-events-none">
                         <h3 class="text-xl font-extrabold text-white">Software Landing</h3>
                         <p class="text-white opacity-70">By Jhone Doe</p>
                     </div>
                 </div>
-                <!-- Item 6 - spans 2 rows in col 3 -->
-                <div class="portfolio-item relative rounded-xl overflow-hidden group"
-                    style="grid-column: 3 / 4; grid-row: 2 / 4;">
-                    <img src="./pic/pic6.jpg" alt="" class="w-full h-full object-cover">
+                <!-- Item 6 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden group wow animate__animated animate__fadeInUp"
+                    style="grid-column: 3 / 4; grid-row: 2 / 4;" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                    <a href="./pic/pic6.jpg" class="block w-full h-full">
+                        <img src="./pic/pic6.jpg" alt="" class="w-full h-full object-cover">
+                    </a>
                     <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                     </div>
-                    <div
-                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-5 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                    <a href="./pic/pic6.jpg"
+                        class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-xl text-white text-2xl translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 z-10 opacity-0 group-hover:opacity-100">
                         <i class="la la-plus"></i>
-                    </div>
+                    </a>
                     <div
-                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10">
+                        class="absolute bottom-6 left-6 text-left translate-y-20 group-hover:translate-y-0 transition-transform duration-700 z-10 pointer-events-none">
                         <h3 class="text-xl font-extrabold text-white">Software Landing</h3>
                         <p class="text-white opacity-70">By Jhone Doe</p>
                     </div>
@@ -474,20 +473,21 @@
             </div>
         </div>
     </section>
+
     <!-- Blog -->
     <section class="blog pt-28 pb-16 text-center">
         <div class="max-w-screen-xl mx-auto px-6">
-            <div class="space-y-3 mb-12">
+            <div class="space-y-3 mb-12 wow animate__animated animate__fadeInUp" data-wow-duration="1s">
                 <p class="text-[#f55f8d] text-xl font-semibold">Our Blog</p>
-                <h2 class="text-6xl font-extrabold text-[#262626]">Latest News & Blog</h2>
+                <h2 class="text-6xl font-extrabold text-[#262626]">Latest News &amp; Blog</h2>
             </div>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="blog__content owl-carousel owl-theme">
                 <!-- Blog item 1 -->
                 <div class="blog-item text-left bg-[rgba(245,95,141,0.1)] rounded-xl overflow-hidden">
                     <div class="relative">
                         <img src="./pic/pic1_1.jpg" alt="" class="w-full rounded-t-xl">
                         <span
-                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md bg-[length:200%]">23
+                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md">23
                             MARCH 2022</span>
                     </div>
                     <div class="p-5 pt-8">
@@ -498,8 +498,7 @@
                     <div
                         class="flex items-center gap-5 px-5 pb-4 pt-3 border-t border-black/5 text-xs uppercase font-medium">
                         <p class="flex items-center gap-1"><i class="las la-user-circle text-[#f55f8d] text-lg"></i> By
-                            <span class="text-[#f55f8d] ml-1">Johne Doe</span>
-                        </p>
+                            <span class="text-[#f55f8d] ml-1">Johne Doe</span></p>
                         <p class="flex items-center gap-1"><i class="las la-comment text-[#f55f8d] text-lg"></i>
                             Comments 15</p>
                     </div>
@@ -509,7 +508,7 @@
                     <div class="relative">
                         <img src="./pic/pic2.jpg" alt="" class="w-full rounded-t-xl">
                         <span
-                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md bg-[length:200%]">23
+                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md">23
                             MARCH 2022</span>
                     </div>
                     <div class="p-5 pt-8">
@@ -520,8 +519,7 @@
                     <div
                         class="flex items-center gap-5 px-5 pb-4 pt-3 border-t border-black/5 text-xs uppercase font-medium">
                         <p class="flex items-center gap-1"><i class="las la-user-circle text-[#f55f8d] text-lg"></i> By
-                            <span class="text-[#f55f8d] ml-1">Johne Doe</span>
-                        </p>
+                            <span class="text-[#f55f8d] ml-1">Johne Doe</span></p>
                         <p class="flex items-center gap-1"><i class="las la-comment text-[#f55f8d] text-lg"></i>
                             Comments 15</p>
                     </div>
@@ -531,7 +529,7 @@
                     <div class="relative">
                         <img src="./pic/pic3.jpg" alt="" class="w-full rounded-t-xl">
                         <span
-                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md bg-[length:200%]">23
+                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md">23
                             MARCH 2022</span>
                     </div>
                     <div class="p-5 pt-8">
@@ -542,38 +540,80 @@
                     <div
                         class="flex items-center gap-5 px-5 pb-4 pt-3 border-t border-black/5 text-xs uppercase font-medium">
                         <p class="flex items-center gap-1"><i class="las la-user-circle text-[#f55f8d] text-lg"></i> By
-                            <span class="text-[#f55f8d] ml-1">Johne Doe</span>
-                        </p>
+                            <span class="text-[#f55f8d] ml-1">Johne Doe</span></p>
                         <p class="flex items-center gap-1"><i class="las la-comment text-[#f55f8d] text-lg"></i>
                             Comments 15</p>
+                    </div>
+                </div>
+                <!-- Blog item 4 -->
+                <div class="blog-item text-left bg-[rgba(245,95,141,0.1)] rounded-xl overflow-hidden">
+                    <div class="relative">
+                        <img src="./pic/pic1_1.jpg" alt="" class="w-full rounded-t-xl">
+                        <span
+                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md">10
+                            JUNE 2022</span>
+                    </div>
+                    <div class="p-5 pt-8">
+                        <h3 class="text-xl font-bold text-[#262626] mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p class="text-sm text-gray-600 mb-4">Nunc convallis sagittis dui eu dictum. Cras sodales id
+                            ipsum ac aliquam. Phasellus justo quam.</p>
+                    </div>
+                    <div
+                        class="flex items-center gap-5 px-5 pb-4 pt-3 border-t border-black/5 text-xs uppercase font-medium">
+                        <p class="flex items-center gap-1"><i class="las la-user-circle text-[#f55f8d] text-lg"></i> By
+                            <span class="text-[#f55f8d] ml-1">Johne Doe</span></p>
+                        <p class="flex items-center gap-1"><i class="las la-comment text-[#f55f8d] text-lg"></i>
+                            Comments 8</p>
+                    </div>
+                </div>
+                <!-- Blog item 5 -->
+                <div class="blog-item text-left bg-[rgba(245,95,141,0.1)] rounded-xl overflow-hidden">
+                    <div class="relative">
+                        <img src="./pic/pic2.jpg" alt="" class="w-full rounded-t-xl">
+                        <span
+                            class="absolute bottom-[-14px] left-4 bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] text-white text-xs font-medium px-4 py-2 rounded-md">15
+                            JULY 2022</span>
+                    </div>
+                    <div class="p-5 pt-8">
+                        <h3 class="text-xl font-bold text-[#262626] mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p class="text-sm text-gray-600 mb-4">Nunc convallis sagittis dui eu dictum. Cras sodales id
+                            ipsum ac aliquam. Phasellus justo quam.</p>
+                    </div>
+                    <div
+                        class="flex items-center gap-5 px-5 pb-4 pt-3 border-t border-black/5 text-xs uppercase font-medium">
+                        <p class="flex items-center gap-1"><i class="las la-user-circle text-[#f55f8d] text-lg"></i> By
+                            <span class="text-[#f55f8d] ml-1">Johne Doe</span></p>
+                        <p class="flex items-center gap-1"><i class="las la-comment text-[#f55f8d] text-lg"></i>
+                            Comments 21</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer  -->
-    <footer class="bg-[#0e1b1f] text-[#636363] text-[15px] relative z-10 overflow-hidden -mt-10">
-        <div class="max-w-screen-xl mx-auto px-6 py-10 relative z-10">
-            <div class="bg-white rounded-xl shadow-lg px-14 py-10 flex items-center justify-between gap-10">
+
+    <!-- Footer -->
+    <footer class="bg-[#0e1b1f] text-[#636363] text-[15px] relative z-10 -mt-10">
+        <div class="max-w-screen-xl mx-auto px-6 relative z-10 -mt-5 pb-10">
+            <div class="bg-white rounded-xl shadow-lg px-14 py-10 flex items-center justify-between gap-10 wow animate__animated animate__fadeInUp relative overflow-hidden"
+                data-wow-duration="1.5s"
+                style="background-image: url('./pic/pattern3.png'); background-size: cover; background-position: center;">
                 <h2 class="text-2xl font-bold text-[#262626] w-1/2">Subscribe To Our Newsletter</h2>
                 <div class="w-1/2">
                     <div class="flex rounded-lg shadow overflow-hidden">
                         <input type="email" placeholder="Your Email Address"
                             class="flex-1 px-5 py-4 text-[15px] text-gray-500 border border-white outline-none focus:border-[#f55f8d] hover:border-[#f55f8d] transition-colors rounded-l-lg">
                         <button style="border-radius: 0 8px 8px 0; padding: 16px 32px;"
-                            class="text-xl text-white bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] bg-[length:200%] hover:bg-[right_center] transition-all duration-500">
+                            class="text-xl text-white bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] hover:bg-[right_center] transition-all duration-500">
                             <i class="las la-paper-plane"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Footer bottom -->
-        <div class="max-w-screen-xl mx-auto px-6 py-16 grid grid-cols-4 gap-10">
-            <!-- Col 1: Logo & Contact -->
-            <div class="space-y-5">
-                <a href="#"><img src="./pic/logo-white.png" alt="Logo" class="w-36"></a>
+        <div class="max-w-screen-xl mx-auto px-6 pt-8 pb-16 grid grid-cols-4 gap-10">
+            <div class="space-y-5 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <a href="#"><img src="./pic/logo-white.png" alt="Logo" class="w-36 pb-5"></a>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
                         <span
@@ -595,9 +635,7 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- Col 2: Our Links -->
-            <div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                 <h3 class="footer-title text-white text-2xl font-bold pb-3 mb-8 relative">Our Links</h3>
                 <ul class="space-y-3">
                     <li><a href="#" class="flex items-center gap-2 hover:text-white transition-colors"><i
@@ -612,9 +650,7 @@
                                 class="fa fa-angle-right text-[#f55f8d]"></i>Blog</a></li>
                 </ul>
             </div>
-
-            <!-- Col 3: Our Services -->
-            <div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">
                 <h3 class="footer-title text-white text-2xl font-bold pb-3 mb-8 relative">Our Services</h3>
                 <ul class="space-y-3">
                     <li><a href="#" class="flex items-center gap-2 hover:text-white transition-colors"><i
@@ -629,9 +665,7 @@
                                 class="fa fa-angle-right text-[#f55f8d]"></i>App Design</a></li>
                 </ul>
             </div>
-
-            <!-- Col 4: Other Links -->
-            <div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
                 <h3 class="footer-title text-white text-2xl font-bold pb-3 mb-8 relative">Other Links</h3>
                 <ul class="space-y-3">
                     <li><a href="#" class="flex items-center gap-2 hover:text-white transition-colors"><i
@@ -647,8 +681,6 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Copyright -->
         <div class="bg-[#1f343b] py-3">
             <div class="max-w-screen-xl mx-auto px-6 flex items-center justify-between">
                 <p>Copyright © 2021 <span class="text-[#f55f8d]">DexignZone</span>. All rights reserved.</p>
@@ -666,10 +698,18 @@
             </div>
         </div>
     </footer>
+
+    <a href="#"
+        class="backToTop cd-top text-replace js-cd-top cd-top--is-visible! fixed bottom-8 right-8 w-14 h-14 flex items-center justify-center bg-[linear-gradient(to_right,#f55f8d,#f8ae56)] rounded-lg text-white hover:shadow-lg transition-all duration-300 z-[9999]">
+        <i class="fa fa-arrow-up text-base"></i>
+    </a>
+
+    <!-- back to top -->
+    <script src="./back-to-top-master/assets/js/util.js"></script>
+    <script src="./back-to-top-master/assets/js/main.js"></script>
     <!-- flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-
-    <!-- jquery-min -->
+    <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -677,18 +717,66 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- countup -->
     <script src="./countupjs/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
-    <script>$('.counter').countUp();
-        // Back to top
-        window.addEventListener('scroll', () => {
-            const btn = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                btn.classList.remove('hidden');
-                btn.classList.add('flex');
-            } else {
-                btn.classList.add('hidden');
-                btn.classList.remove('flex');
-            }
+    <script>$('.counter').countUp();</script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            var blogOwl = $('.blog__content').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1024: { items: 3 }
+                }
+            });
+            setTimeout(function () {
+                blogOwl.trigger('refresh.owl.carousel');
+            }, 500);
         });
+    </script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        const galleryItems = [
+            { src: './pic/pic1_2.jpg', thumb: './pic/pic1_2.jpg', caption: 'Design 1' },
+            { src: './pic/pic2_1.jpg', thumb: './pic/pic2_1.jpg', caption: 'Design 2' },
+            { src: './pic/pic3_1.jpg', thumb: './pic/pic3_1.jpg', caption: 'Design 3' },
+            { src: './pic/pic4.jpg', thumb: './pic/pic4.jpg', caption: 'Design 4' },
+            { src: './pic/pic5.jpg', thumb: './pic/pic5.jpg', caption: 'Design 5' },
+            { src: './pic/pic6.jpg', thumb: './pic/pic6.jpg', caption: 'Design 6' },
+        ];
+
+        document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                Fancybox.show(
+                    galleryItems.map(img => ({ src: img.src, thumb: img.thumb, caption: img.caption, type: 'image' })),
+                    {
+                        startIndex: index,
+                        Thumbs: { showOnStart: true },
+                        Toolbar: { display: { left: [], middle: [], right: ['close'] } }
+                    }
+                );
+            });
+        });
+    </script>
+    <!-- WOW.js init -->
+    <script>
+        new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 100,
+            mobile: true,
+            live: true
+        }).init();
     </script>
 </body>
 
